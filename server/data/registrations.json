@@ -1,0 +1,22 @@
+[
+  {
+    "registrationId": "ECELL-2026-001",
+    "fullName": "Aarav Sharma",
+    "email": "aarav.sharma@uietkuk.ac.in",
+    "phone": "9876543210",
+    "teamName": "Nexus AI",
+    "startupName": "EcoPulse",
+    "description": "EcoPulse is a smart IoT energy monitoring platform designed to reduce campus power consumption.",
+    "timestamp": "2026-08-25T03:58:05.955Z"
+  },
+  {
+    "registrationId": "ECELL-2026-002",
+    "fullName": "Aarav Sharma",
+    "email": "student@uietkuk.ac.in",
+    "phone": "9876543210",
+    "teamName": "Innovators",
+    "startupName": "EcoTrack",
+    "description": "EcoTrack is an IoT campus energy monitoring platform designed to reduce electricity wastage.",
+    "timestamp": "2026-08-25T04:09:42.778Z"
+  }
+]

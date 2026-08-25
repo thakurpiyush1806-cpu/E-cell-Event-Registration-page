@@ -1,99 +1,142 @@
 # 🚀 E-Cell UIET KUK - Startup Pitch Competition Portal
 
-Official registration portal for the **Startup Pitch Competition** organized by **E-Cell UIET KUK (University Institute of Engineering & Technology, Kurukshetra University)**.
+[![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Express.js](https://img.shields.io/badge/Express.js-4.21-000000?logo=express&logoColor=white)](https://expressjs.com/)
+
+An official, production-ready **Startup Pitch Competition Registration Website** built for **E-Cell UIET KUK (University Institute of Engineering & Technology, Kurukshetra University)**.
 
 ---
 
-## 🌟 Key Features
+## ✨ Features
 
-* **Official Branding**: Direct usage of the official E-Cell UIET KUK logo with zero aspect ratio distortion.
-* **Modern Dark UI/UX**: Built with Tailwind CSS, Lucide icons, and smooth Framer Motion animations.
-* **Responsive Layout**: Fully responsive across Mobile, Tablet, Laptop, and Desktop screens.
-* **Comprehensive Registration Form**:
+* **Official Branding**: Prominent placement of the official E-Cell UIET KUK logo with zero distortion or aspect ratio changes.
+* **Modern Entrepreneurship Theme**: Dark-mode glassmorphic design system (`#080c16`) with crimson red accents matching the logo's leaping figure.
+* **Interactive Pitch Competition Cards**:
+  * 💡 Showcase Your Idea
+  * 🚀 Build Your Startup
+  * 🎤 Pitch Your Vision
+  * 🤝 Connect & Network
+* **Roadmap & FAQ Accordion**: Interactive event timeline (September, October, November) and FAQs.
+* **Real-time Client & Server Validation**:
   * Full Name (minimum 3 characters)
-  * Email Address (valid email validation)
-  * Phone Number (10-digit Indian mobile number validation)
+  * Email Address (valid email regex)
+  * Phone Number (10-digit Indian mobile number regex)
   * Team Name (minimum 2 characters)
   * Startup / Idea Name
   * Startup / Idea Description with **Live Character Counter (`0 / 500`)**
-* **Instant Validation & Feedback**: Real-time error messages, loading state (`Submitting...`), disabled states during submit, and celebration confetti animation upon success.
-* **Unique Registration ID Generator**: Automatically generates unique registration IDs (`ECELL-2026-001`, `ECELL-2026-002`) with a 1-click copy feature.
-* **Backend REST API & Persistence**: Express REST API backend (`POST /api/register`, `GET /api/registrations`) with persistent JSON data storage.
-* **Organizer Portal**: Built-in admin dashboard with team search and **Export to CSV** functionality.
+* **Submission States & Celebration**: Loading button state (`Submitting...`), disabled prevention of double submission, and celebration confetti 🎉 on success.
+* **Unique Registration ID**: Auto-generates unique IDs (e.g. `ECELL-2026-001`, `ECELL-2026-002`) with 1-click clipboard copy.
+* **Organizer Dashboard (Admin View)**: Embedded organizer drawer to view, search/filter submissions, and export data directly to **CSV**.
+* **Express REST API & Persistent Storage**: Server endpoints `POST /api/register` and `GET /api/registrations` saving entries to JSON storage.
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+* **[Node.js](https://nodejs.org/)** (v18.0.0 or higher recommended)
+* **[npm](https://www.npmjs.com/)** (v9.0.0 or higher)
+* **[Git](https://git-scm.com/)**
+
+---
+
+## 💻 How to Run the Project for Other Users / Contributors
+
+Follow these simple steps to clone and run the project locally on your system:
+
+### Step 1: Clone the Repository
+Open your terminal or command prompt and clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ecell-uiet-kuk-startup-pitch.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd ecell-uiet-kuk-startup-pitch
+```
+
+---
+
+### Step 2: Install Project Dependencies
+Run npm install to install all frontend and backend dependencies:
+
+```bash
+npm install
+```
+
+---
+
+### Step 3: Start the Server & Website
+Launch both the Express REST API server (port 3001) and Vite frontend dev server (port 3000) simultaneously:
+
+```bash
+npm run dev
+```
+
+---
+
+### Step 4: Open in Web Browser
+Open your browser and navigate to:
+
+👉 **`http://localhost:3000`**
+
+---
+
+### 🪟 Windows 1-Click Fast Launcher
+If you are on Windows, you can simply **double-click** the [`run.bat`](run.bat) file inside the project directory. It will automatically start the servers and open the website in your default browser!
+
+---
+
+## 📦 Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run vite -- build
+```
+
+The production output will be generated inside the `dist/` directory.
+
+---
+
+## 📁 Folder Structure
 
 ```text
-D:\EventRegistration E-cell\
+ecell-uiet-kuk-startup-pitch/
 ├── public/
 │   └── assets/
 │       └── ecell-logo.jpg        # Official E-Cell UIET KUK Logo
 ├── server/
-│   ├── server.js                 # Express REST API Server
+│   ├── server.js                 # Express REST API Server & Storage
 │   └── data/
-│       └── registrations.json    # Persistent Registration Data Store
+│       └── registrations.json    # Saved Registrations JSON Data
 ├── src/
 │   ├── api/
-│   │   └── registrationService.js# API Service & Offline Fallback
+│   │   └── registrationService.js# API Client & Offline Fallback
 │   ├── components/
-│   │   ├── Navbar.jsx            # Header Navigation & Branding
-│   │   ├── Hero.jsx              # Pitch Hero & CTAs
+│   │   ├── Navbar.jsx            # Header Navigation & Logo
+│   │   ├── Hero.jsx              # Pitch Hero & CTA Buttons
 │   │   ├── CompetitionInfo.jsx   # 4 Interactive Feature Cards
-│   │   ├── WhyParticipate.jsx    # Roadmap Timeline & FAQs
-│   │   ├── RegistrationForm.jsx  # Form with Real-Time Validation
-│   │   ├── SuccessMessage.jsx    # Celebration Card & Unique ID
-│   │   ├── AdminModal.jsx        # Organizer View & CSV Export
-│   │   └── Footer.jsx            # Footer & Contact Links
+│   │   ├── WhyParticipate.jsx    # Timeline & FAQ Section
+│   │   ├── RegistrationForm.jsx  # Form with Real-time Validation
+│   │   ├── SuccessMessage.jsx    # Success Screen & Unique ID
+│   │   ├── AdminModal.jsx        # Organizer Dashboard & CSV Export
+│   │   └── Footer.jsx            # Footer & Links
 │   ├── utils/
-│   │   └── validation.js         # Form Validation Logic
-│   ├── App.jsx                   # Main Application State
-│   ├── main.jsx                  # Entry Point
-│   └── index.css                 # Custom Tailwind CSS & Animations
-├── .gitignore
-├── run.bat                       # One-Click Launch Script
-├── build.bat                     # Build Bundle Script
+│   │   └── validation.js         # Validation Logic Rules
+│   ├── App.jsx                   # Main App Component
+│   ├── main.jsx                  # React Entry Point
+│   └── index.css                 # Custom Tailwind CSS & Styles
+├── run.bat                       # Windows One-Click Launcher
 ├── package.json
 └── vite.config.js
 ```
 
 ---
 
-## ⚡ Quick Start Guide
-
-### Option 1: Double-Click Launcher (Windows)
-Double-click [`run.bat`](run.bat) to launch the server and open the website automatically in your browser!
-
-### Option 2: Command Line
-
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Start Development Server**:
-   ```bash
-   npm run dev
-   ```
-
-3. Open **`http://localhost:3000`** in your browser.
-
----
-
-## 🛠️ GitHub Push Instructions
-
-To push this repository to GitHub:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: E-Cell UIET KUK Startup Pitch Competition Website"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
-```
-
----
-
-© 2026 E-Cell UIET KUK. All Rights Reserved.
+© 2026 **E-Cell UIET KUK** (University Institute of Engineering & Technology, Kurukshetra University). All rights reserved.

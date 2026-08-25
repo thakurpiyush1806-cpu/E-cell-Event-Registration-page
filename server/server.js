@@ -99,7 +99,7 @@ const getRegistrations = () => {
       ideaName: item.ideaName || item.startupName || '',
       description: item.description || item.ideaDescription || '',
       ideaDescription: item.ideaDescription || item.description || '',
-      status: item.status || 'pending',
+      status: item.status || 'Registered',
       createdAt: item.createdAt || item.timestamp || new Date().toISOString(),
       timestamp: item.timestamp || item.createdAt || new Date().toISOString(),
     }));
@@ -228,7 +228,7 @@ app.post('/api/register', (req, res) => {
       ideaName: startupName.trim(),
       description: description.trim(),
       ideaDescription: description.trim(),
-      status: 'pending',
+      status: 'Registered',
       createdAt: serverTimestampStr,
       timestamp: serverTimestampStr,
     };

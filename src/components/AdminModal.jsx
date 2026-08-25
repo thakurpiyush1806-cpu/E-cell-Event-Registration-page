@@ -210,8 +210,8 @@ export default function AdminModal({ isOpen, onClose }) {
                       <td className="p-3.5 text-slate-400">{item.email}</td>
                       <td className="p-3.5 text-slate-400">{item.phone}</td>
                       <td className="p-3.5">
-                        <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-amber-950 text-amber-400 border border-amber-800">
-                          {item.status || 'pending'}
+                        <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800">
+                          {item.status || 'Registered'}
                         </span>
                       </td>
                       <td className="p-3.5 text-slate-500 text-[11px] whitespace-nowrap">

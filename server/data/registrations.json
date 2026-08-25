@@ -18,5 +18,35 @@
     "startupName": "EcoTrack",
     "description": "EcoTrack is an IoT campus energy monitoring platform designed to reduce electricity wastage.",
     "timestamp": "2026-08-25T04:09:42.778Z"
+  },
+  {
+    "registrationId": "ECELL-2026-003",
+    "fullName": "Ananya Roy",
+    "email": "ananya.roy@uietkuk.ac.in",
+    "phone": "9876543210",
+    "teamName": "TechVanguard",
+    "startupName": "SolarGrid",
+    "description": "SolarGrid is a peer-to-peer renewable energy trading platform for smart college campuses.",
+    "timestamp": "2026-08-25T14:38:23.717Z"
+  },
+  {
+    "registrationId": "ECELL-2026-004",
+    "fullName": "Rohan Verma",
+    "email": "rohan.verma@uietkuk.ac.in",
+    "phone": "8765432109",
+    "teamName": "BioInnovate",
+    "startupName": "AgriSense",
+    "description": "AgriSense provides AI-driven soil health diagnostics for micro-farmers.",
+    "timestamp": "2026-08-25T14:38:23.784Z"
+  },
+  {
+    "registrationId": "ECELL-2026-005",
+    "fullName": "Ananya Roy",
+    "email": "ananya.roy@uietkuk.ac.in",
+    "phone": "9876543210",
+    "teamName": "TechVanguard",
+    "startupName": "SolarGrid",
+    "description": "SolarGrid is a peer-to-peer renewable energy trading platform for smart college campuses.",
+    "timestamp": "2026-08-25T14:39:09.305Z"
   }
 ]

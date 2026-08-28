@@ -72,7 +72,7 @@ npm install
 ---
 
 ### Step 3: Start the Server & Website
-Launch both the Express REST API server (port 3001) and Vite frontend dev server (port 3000) simultaneously:
+Launch both the Express REST API server (port 8081) and Vite frontend dev server (port 8080) simultaneously:
 
 ```bash
 npm run dev
@@ -83,7 +83,7 @@ npm run dev
 ### Step 4: Open in Web Browser
 Open your browser and navigate to:
 
-👉 **`http://localhost:3000`**
+👉 **`http://localhost:8080`**
 
 ---
 

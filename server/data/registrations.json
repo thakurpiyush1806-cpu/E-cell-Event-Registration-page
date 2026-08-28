@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "registrationId": "ECELL-2026-001",
+    "fullName": "Aarav Sharma",
+    "email": "student@uietkuk.ac.in",
+    "phone": "9876543210",
+    "teamName": "Innovators",
+    "startupName": "EcoTrack",
+    "ideaName": "EcoTrack",
+    "description": "EcoRover is an autonomous solar-powered waste collection rover designed for university campuses to automate litter collection and segregation.",
+    "ideaDescription": "EcoRover is an autonomous solar-powered waste collection rover designed for university campuses to automate litter collection and segregation.",
+    "status": "Registered",
+    "createdAt": "2026-08-25T14:49:01.003Z",
+    "timestamp": "2026-08-25T14:49:01.003Z"
+  }
+]

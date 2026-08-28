@@ -7,11 +7,11 @@ echo =================================================================
 echo        E-CELL UIET KUK - STARTUP PITCH COMPETITION PORTAL
 echo =================================================================
 echo.
-echo  Starting Express Backend API (3001) ^& React Frontend (3000)...
-echo  Opening http://localhost:3000 in your browser...
+echo  Starting Express Backend API (8081) ^& React Frontend (8080)...
+echo  Opening http://localhost:8080 in your browser...
 echo.
 
-start "" "http://localhost:3000"
+start "" "http://localhost:8080"
 
 call npm run dev
 

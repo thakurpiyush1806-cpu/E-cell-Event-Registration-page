@@ -4,17 +4,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000,
+    port: 8080,
+    strictPort: true, // Ensures Vite strictly stays on 8080 and never uses 5173 or 3000
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'http://localhost:8081',
         changeOrigin: true,
         secure: false,
-        configure: (proxy) => {
-          proxy.on('error', (err, req, res) => {
-            console.warn('[Vite Proxy Warning] Backend API server on 3001 not responding, using secondary fallback:', err.message);
-          });
-        }
       },
     },
   },

@@ -136,7 +136,3 @@ ecell-uiet-kuk-startup-pitch/
 ├── package.json
 └── vite.config.js
 ```
-
----
-
-© 2026 **E-Cell UIET KUK** (University Institute of Engineering & Technology, Kurukshetra University). All rights reserved.
